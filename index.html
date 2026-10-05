@@ -3,45 +3,22 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Rise Beyond</title>
+<title>Rise Beyond</title><!-- lake-hero-v3 -->
 <style>
-*{box-sizing:border-box;-webkit-tap-highlight-color:transparent}
-html,body{margin:0;background:#07060d;color:#f4f0ff;font-family:system-ui,sans-serif}
-.hero img{width:100%;display:block;max-height:78vh;object-fit:cover}
-.pad{padding:12px 16px 48px;max-width:480px;margin:0 auto}
-h1{font-weight:500;margin:8px 0}
-.tag{color:#3dd6c6;letter-spacing:.16em;font-size:12px}
-p{color:#b7aec9}
-button,a.btn{display:block;width:100%;min-height:52px;border:0;border-radius:999px;background:#3dd6c6;color:#06201c;font-weight:700;font-size:16px;text-align:center;line-height:52px;text-decoration:none;margin:12px 0}
-.card{background:#161226;border:1px solid rgba(179,136,255,.25);border-radius:16px;padding:16px;margin:10px 0}
-#app{display:none}
+*{box-sizing:border-box}
+html,body{margin:0;background:#070d16;color:#f4f0ff;font-family:system-ui,sans-serif}
+#home{min-height:100dvh;background:#0b1426 url('https://raw.githubusercontent.com/justjude34-ship-it/rise-beyond/main/hero.jpg') center/cover no-repeat;display:flex;flex-direction:column;justify-content:flex-end;padding:24px 20px 32px}
+button,a.btn{display:block;width:100%;min-height:56px;border:0;border-radius:999px;background:#3dd6c6;color:#06201c;font-weight:700;font-size:16px;text-align:center;line-height:56px;text-decoration:none;margin:12px 0}
+.card{background:#121a28;border:1px solid rgba(61,214,198,.25);border-radius:16px;padding:16px;margin:10px 0}
+#app{display:none;padding:18px 16px 40px;max-width:480px;margin:0 auto}
 </style>
 </head>
 <body>
-<div id="home">
-  <div class="hero"><img alt="Rise Beyond" src="hero.jpg"></div>
-  <div class="pad">
-    <div class="tag">RISE BEYOND</div>
-    <h1>Settle. Ground. Rise.</h1>
-    <p>New cover. Tap Enter.</p>
-    <button type="button" id="enter">Enter</button>
-  </div>
-</div>
-<div id="app">
-  <div class="pad">
-    <div class="tag">RISE BEYOND</div>
-    <h1>You are in.</h1>
-    <div class="card"><strong>Still Water</strong><p>Lake at dusk. Let the ripples settle.</p></div>
-    <div class="card"><strong>Sacred Center</strong><p>The Om. A point to come back to.</p></div>
-    <div class="card"><strong>Wave Listen</strong><p>Sound moving through. Nothing to fix.</p></div>
-    <div class="card"><strong>Bowl Resonance</strong><p>One tone. A longer exhale.</p></div>
-    <a class="btn" href="tel:1800737732">1800RESPECT</a>
-    <button type="button" id="back">Back</button>
-  </div>
-</div>
+<div id="home"><button type="button" id="enter">Enter</button></div>
+<div id="app"><h1>Rise Beyond</h1><div class="card"><strong>Still Water</strong><p>Lake at dusk.</p></div><div class="card"><strong>Sacred Center</strong><p>The Om.</p></div><div class="card"><strong>Wave Listen</strong><p>Sound moving through.</p></div><div class="card"><strong>Bowl Resonance</strong><p>One tone. A longer exhale.</p></div><a class="btn" href="tel:1800737732">1800RESPECT</a><a class="btn" href="tel:131114">Lifeline</a><button type="button" id="back">Back</button></div>
 <script>
-document.getElementById("enter").onclick=function(){document.getElementById("home").style.display="none";document.getElementById("app").style.display="block";};
-document.getElementById("back").onclick=function(){document.getElementById("app").style.display="none";document.getElementById("home").style.display="block";};
+document.getElementById('enter').onclick=function(){document.getElementById('home').style.display='none';document.getElementById('app').style.display='block';};
+document.getElementById('back').onclick=function(){document.getElementById('app').style.display='none';document.getElementById('home').style.display='flex';};
 </script>
 </body>
 </html>
